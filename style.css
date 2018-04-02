@@ -1,0 +1,203 @@
+/*Theme Name: Widian
+Theme URI:
+Author: E and V Design (Elie W. And Vicky K.)
+Author URI: https://eandvdesign.com
+Description: Custom made theme for Nicola Couseling Services
+Version: 1.0
+*/
+
+html, body {
+	color: #354349;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container-main img {
+		max-width: 100%;
+		height:auto;
+}
+a {
+	color: #354349;
+}
+a:hover {
+	color: black;
+/*	text-decoration: none;*/
+}
+
+.italic {
+ font-style: italic;
+}
+
+.bold {
+	font-weight: 800;
+}
+.ajax-loader {
+	display: none !important;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Open Sans', sans-serif;
+	color: #354349;
+	font-weight: bold;
+	text-align: center;
+}
+h1, h2, h3, h4, h5, p {
+	margin-top: 0px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+#main {
+	min-height: calc(100vh - 278px);
+}
+
+.light-blue {
+	background-color:green;
+}
+/* #6faa9f
+ */
+
+
+.navbar-default {
+	border:none;
+}
+/* @media(max-width:950px){
+	.navbar-default {
+		border-bottom: 1px solid #e8ebf7 !important;
+	}
+} */
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+#navbar {
+	background-color: #6faa9f;
+
+}
+
+#navbar a {
+	color: white;
+}
+
+.navbar-default .navbar-toggle:focus {
+	background-color: white;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-toggle {
+	border:0px solid transparent;
+}
+.navbar-default .navbar-toggle {
+	padding-top:4px;
+	padding-bottom:2px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #2a0d45;
+	margin-left: 5px;
+	width: 20px;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color: #2a0d45
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: white;
+}
+
+.navbar-default .navbar-toggle .toggle-text {
+	font-size: 10px;
+	margin-top: 1px;
+}
+
+.navbar-default .navbar-toggle:hover .toggle-text {
+	color: white;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+	background-color: #f5f5f5;
+	color:black;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	background-color: #6faa9f;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: #6faa9f;
+}
+#navbar li a:hover {
+	text-decoration: underline;
+}
+#navbar li a:active {
+	font-style: italic;
+}
+/* #navbar li:not(.active){
+	opacity: .7;
+} */
+
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none !important;
+    }
+}
+
+.section-logo {
+	text-align: center;
+	margin:75px 0px;
+}
+
+.section-logo img {
+	z-index: -1;
+	position: absolute;
+	height: 50px;
+	width: auto;
+	margin-top:-35px;
+	margin-left: -20px;
+}
+.section-logo h1 {
+	margin-bottom:0px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.section-logo h4 {
+	font-family: 'Oswald', sans-serif;
+}
+
+.section-logo .logo-line {
+	height:2px;
+	width: 145px;
+	background-color:#354349;
+	display: inline-block;
+	vertical-align: center;
+	margin:5px;
+}
+
+
+
+
+.page-template-clincians .section .background-img {
+	background-image: url(img/widian-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+	height:500px;
+	width: 100%;;
+}
+
+@media (min-width:1800px){
+	.page-template-clincians .section .background-img {
+		height:700px;
+	}
+}
+@media (max-width:767px){
+	.page-template-clincians .section .background-img {
+		height:;
+		background-size: contain;
+	}
+}
