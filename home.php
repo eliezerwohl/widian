@@ -45,7 +45,13 @@
 <div class="section project">
   <div class="container">
     <h3>Lived Ex Project</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/90X5NJleYJQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class='row'>
+      <div class="col-md-offset-2 col-md-8 col-sm-12">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/90X5NJleYJQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
     <p>The Lived Experience Project with Widian Nicola is a podcast show that explores unique and evocative narratives rarely heard in mainstream media. Each season focuses on a lesser known and marginalized population and how these oral histories unveil the often complex nature of the shared human condition. Through this, we hope to build communities infused with awareness and compassion.</p>
   </div>
 </div>
@@ -67,6 +73,8 @@
       </div>
       <div class="input-holder">
         <textarea></textarea>
+        <button class="btn btn-darkblue">Submit</div>
+        <p>I am committed to your privacy. Do not include confidential or private information regarding your health condition in this form or any other form found on this website. This form is for general questions or messages. By clicking "send," you agree that the phone number you provide may be used to contact you (including autodialed or pre-recorded calls). Consent is not a condition of purchase.</p>
       </div>
     </div>
   </div>

@@ -20,7 +20,6 @@ a {
 }
 a:hover {
 	color: black;
-/*	text-decoration: none;*/
 }
 
 .italic {
@@ -29,6 +28,17 @@ a:hover {
 
 .bold {
 	font-weight: 800;
+}
+
+.btn {
+	margin:auto;
+	display: block;
+	border-radius:0;
+	padding:5px 25px;
+}
+.btn-darkblue {
+	background-color:#35434a;
+	color:white;
 }
 .ajax-loader {
 	display: none !important;
@@ -56,8 +66,8 @@ p {
 }
 
 #main .section {
-	margin-top:50px;
-	margin-bottom:50px;
+	padding-top:50px;
+	padding-bottom:50px;
 }
 
 .light-blue {
@@ -246,22 +256,29 @@ p {
 	padding:15px 20px;
 }
 
-.page-template-home .project iframe {
+.page-template-home .embed-responsive {
 	margin:auto;
 	display: block;
 }
 
 .page-template-home .contact-form {
-		background-image: url(img/flowers.jpg);
-		height:auto;
+	background-image: url(img/flowers.jpg);
+	height:auto;
 }
 .page-template-home .contact-form .input-holder {
 	width: 50%;
 	float:left;
 	padding:20px;
 }
+.page-template-home .contact-form .input-holder:nth-child(even) {
+	padding-left:0px;
+}
+.page-template-home .contact-form .input-holder:nth-child(odd) {
+	padding-right:0px;
+}
 .page-template-home .contact-form .input-holder:last-of-type {
 	width:100%;
+	padding-right:0px;
 }
 .page-template-home .contact-form input {
 	float: left;
@@ -289,5 +306,47 @@ textarea {
 	.page-template-clincians .section .background-img {
 		height:;
 		background-size: contain;
+	}
+}
+
+
+
+footer {
+	padding: 20px 15px;
+	color: white;
+	background-color: #35434a;
+}
+
+footer a {
+	color: white !important;
+}
+
+footer .contact {
+	margin-bottom: 10px;
+}
+
+footer .contact-me, footer .bottom-contact {
+	padding:10px 10px;
+}
+footer .contact-me:hover {
+	color: #23527c;
+}
+
+footer .divider {
+	padding: 0px 10px;
+}
+@media(max-width: 767px){
+	footer .contact-me, footer .bottom-contact {
+		display: inline-block;
+		width: 100%;
+		padding: 10px;
+		padding-bottom: 0px;
+		font-size: 12px;
+	}
+	footer .contact {
+		margin-bottom: 0px;
+	}
+	footer .divider {
+		display:none;
 	}
 }
