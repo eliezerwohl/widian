@@ -29,6 +29,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a id="" class="navbar-brand visible-xs" href="#home">
+            <div class="section-logo mobile">
+              <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Couseling Services</span></h1>
+              <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
+            </div>
+          </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -44,8 +50,8 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <div class="section-logo">
-      <h1><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Couseling Services</h1>
+    <!-- <div class="section-logo">
+      <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Couseling Services</span></h1>
       <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
-    </div>
+    </div> -->
   <div id="main">
