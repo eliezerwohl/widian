@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, p {
 	margin-top: 0px;
 }
 
+h3 {
+	margin-bottom: 20px;
+}
+
 p {
 	margin-bottom: 20px;
 }
@@ -51,29 +55,21 @@ p {
 	min-height: calc(100vh - 278px);
 }
 
+#main .section {
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
 .light-blue {
 	background-color:green;
 }
-/* #6faa9f
- */
-
-
-.navbar-default {
-	border:none;
-}
-/* @media(max-width:950px){
-	.navbar-default {
-		border-bottom: 1px solid #e8ebf7 !important;
-	}
-} */
 
 .navbar {
 	margin-bottom: 0px;
-}
-
-#navbar {
+	border:none !important;
+	border-radius: 0;
 	background-color: #6faa9f;
-
+	border:none;
 }
 
 #navbar a {
@@ -135,16 +131,31 @@ p {
 } */
 
 
-
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+@media (min-width:767px){
+	.navbar-nav {
+	    display: flex;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	}
 }
 @media (min-width: 768px) {
     .navbar-nav {
         float: none !important;
     }
+}
+
+@media(max-width:767px){
+	.navbar {
+		position: absolute;
+		background-color: transparent;
+		top:0;
+		right:0;
+		left:0;
+	}
+	.navbar-nav {
+		background-color: white;
+		color:blue;
+	}
 }
 
 .section-logo {
@@ -178,16 +189,95 @@ p {
 	margin:5px;
 }
 
-
-
-
-.page-template-clincians .section .background-img {
-	background-image: url(img/widian-about.jpg);
-  background-repeat: no-repeat;
+#main .background-img {
+	background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+}
+
+.page-template-home .background-img {
+	background-image: url(img/bench.jpg);
+	height:400px;
+	width: 100%;
+}
+
+.page-template-home .background-img .container {
+	background-position: middle;
+	height:100%;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.page-template-home .background-img .inner  {
+	background-color:rgba(255,255,255, 0.7);
+}
+
+.page-template-home .services .inner .text {
+	padding: 25px 50px;
+	text-align: center;
+	position: relative;
+}
+.page-template-home .services .inner .text  h3 {
+	position:absolute;
+	top:0;right:0;left:0;
+	margin-top:-50px;
+}
+
+.page-template-home .services .inner .text p {
+	font-size: 20px;
+}
+
+.page-template-home .clinicians img {
+	box-shadow: 15px -20px #b3d1d6;
+	display: block;
+	margin:auto;
+	height:371px;
+	width:auto;
+}
+
+.page-template-home .approach {
+	background-image: url(img/breather.jpg);
+	height:100%;
+}
+.page-template-home .approach .inner  {
+	margin:50px 0px;
+}
+.page-template-home .approach .inner .text {
+	padding:15px 20px;
+}
+
+.page-template-home .project iframe {
+	margin:auto;
+	display: block;
+}
+
+.page-template-home .contact-form {
+		background-image: url(img/flowers.jpg);
+		height:auto;
+}
+.page-template-home .contact-form .input-holder {
+	width: 50%;
+	float:left;
+	padding:20px;
+}
+.page-template-home .contact-form .input-holder:last-of-type {
+	width:100%;
+}
+.page-template-home .contact-form input {
+	float: left;
+	width:100%;
+	padding:5px;
+}
+textarea {
+	padding:20px;
+	width: 100%;
+}
+
+.page-template-clincians .background-img {
+	background-image: url(img/widian-about.jpg);
 	height:500px;
-	width: 100%;;
+	width: 100%;
+	background-position: top;
 }
 
 @media (min-width:1800px){
