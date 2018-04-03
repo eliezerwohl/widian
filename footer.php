@@ -9,12 +9,12 @@
   <meta itemprop="addressRegion" content="NJ">
   <meta itemprop="postalCode" content= "08902"></span>
 	<div class="contact">
-		<a class="contact-me" target="_blank" href="mailto:<?php the_field('e-mail','option'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span itemprop="email"><?php the_field("e-mail", "option"); ?></span></a>
-		<a class="contact-me" target="_blank" href="<?php the_field("google_map_link", "option"); ?>"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php the_field("address", "option"); ?></a>
-		<a class="contact-me" target="_blank" href="tel:<?php echo str_replace(' ', '', get_field('phone', 'option')); ?>"><i class="fa fa-phone" aria-hidden="true"></i> <span itemprop="telephone"><?php the_field("phone", "option"); ?></span></a>
+		<a class="contact-me" target="_blank" href="mailto:<?php the_field('e-mail','option'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span itemprop="email"><?php the_field("e-mail", "option"); ?></span></a><span class="divider">|</span>
+		<a class="contact-me" target="_blank" href="<?php the_field("google_map_link", "option"); ?>"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php the_field("address", "option"); ?></a><span class="divider">|</span>
+		<a class="contact-me" target="_blank" href="tel:<?php echo str_replace(' ', '', get_field('phone', 'option')); ?>"><i class="fa fa-phone" aria-hidden="true"></i> <span itemprop="telephone"><?php the_field("phone", "option"); ?></span></a><span class="divider">|</span>
 	</div>
 	<div>
-		<span class="bottom-contact">&copy; <?php echo date("Y"); ?> Barbara L. Nelson.  All rights reserved</span><span class="divider">|</span><span class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></span>
+		<div class="bottom-contact">&copy; <?php echo date("Y"); ?> Nicola Counseling Services, LLC</div><div class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></div>
 	</div>
 	<?php wp_footer(); ?>
 	</footer>

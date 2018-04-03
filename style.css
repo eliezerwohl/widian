@@ -20,15 +20,27 @@ a {
 }
 a:hover {
 	color: black;
-/*	text-decoration: none;*/
 }
-
+img {
+	max-width: 100%;
+}
 .italic {
  font-style: italic;
 }
 
 .bold {
 	font-weight: 800;
+}
+
+.btn {
+	margin:auto;
+	display: block;
+	border-radius:0;
+	padding:5px 25px;
+}
+.btn-darkblue {
+	background-color:#35434a;
+	color:white;
 }
 .ajax-loader {
 	display: none !important;
@@ -56,8 +68,36 @@ p {
 }
 
 #main .section {
-	margin-top:50px;
-	margin-bottom:50px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+#main .background-img {
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-form .input-holder {
+	width: 50%;
+	float:left;
+	padding:20px;
+}
+.contact-form .input-holder:nth-child(even) {
+	padding-left:0px;
+}
+.contact-form .input-holder:nth-child(odd) {
+	padding-right:0px;
+}
+.contact-form .input-holder:last-of-type {
+	width:100%;
+	padding-right:0px;
+}
+.contact-form input {
+	float: left;
+	width:100%;
+	padding:5px;
+}
+.contact-form textarea {
+	padding:20px;
+	width: 100%;
 }
 
 .light-blue {
@@ -162,7 +202,10 @@ p {
 	text-align: center;
 	margin:75px 0px;
 }
-
+/* fixes section logo posistion on ie */
+.iefix {
+	position: relative;
+}
 .section-logo img {
 	z-index: -1;
 	position: absolute;
@@ -170,6 +213,7 @@ p {
 	width: auto;
 	margin-top:-35px;
 	margin-left: -20px;
+	top:0; right:0; left:0;
 }
 .section-logo h1 {
 	margin-bottom:0px;
@@ -178,6 +222,22 @@ p {
 
 .section-logo h4 {
 	font-family: 'Oswald', sans-serif;
+}
+
+@media(max-width:767px){
+	.mobile {
+		margin:0px auto;
+		display: block;
+	}
+
+	.navbar-brand {
+		width: 100%;
+		height:auto;
+		padding:0px;
+	}
+	#main {
+		margin-top:100px;
+	}
 }
 
 .section-logo .logo-line {
@@ -189,10 +249,6 @@ p {
 	margin:5px;
 }
 
-#main .background-img {
-	background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .page-template-home .background-img {
 	background-image: url(img/bench.jpg);
@@ -246,32 +302,56 @@ p {
 	padding:15px 20px;
 }
 
-.page-template-home .project iframe {
+.page-template-home .embed-responsive {
 	margin:auto;
 	display: block;
 }
 
 .page-template-home .contact-form {
-		background-image: url(img/flowers.jpg);
-		height:auto;
+	background-image: url(img/flowers.jpg);
+	height:auto;
 }
-.page-template-home .contact-form .input-holder {
-	width: 50%;
-	float:left;
-	padding:20px;
+
+.page-template-contact .contact-form {
+	background-color: #d9e8ea;
+	background-image: none;
 }
-.page-template-home .contact-form .input-holder:last-of-type {
-	width:100%;
+
+.page-template-contact .map-container {
+    margin-bottom: 100px
 }
-.page-template-home .contact-form input {
-	float: left;
-	width:100%;
-	padding:5px;
+
+@media(min-width: 992px) {
+    .page-template-contact .map-container .table {
+        display:table;
+        height: 300px
+    }
+
+    .page-template-contact .map-container .txt {
+        display: table-cell;
+        vertical-align: middle;
+        float: none
+    }
 }
-textarea {
-	padding:20px;
-	width: 100%;
+
+@media(max-width: 992px) {
+    .page-template-contact .map-container .table {
+        height:auto
+    }
+
+    .page-template-contact .map-container {
+        margin-bottom: 25px
+    }
+
+    .page-template-contact iframe {
+        margin-bottom: 50px
+    }
 }
+
+.page-template-contact .map-container .txt p {
+    text-align: left
+}
+
 
 .page-template-clincians .background-img {
 	background-image: url(img/widian-about.jpg);
@@ -289,5 +369,47 @@ textarea {
 	.page-template-clincians .section .background-img {
 		height:;
 		background-size: contain;
+	}
+}
+
+
+
+footer {
+	padding: 20px 15px;
+	color: white;
+	background-color: #35434a;
+}
+
+footer a {
+	color: white !important;
+}
+
+footer .contact {
+	margin-bottom: 10px;
+}
+
+footer .contact-me, footer .bottom-contact {
+	padding:10px 10px;
+}
+footer .contact-me:hover {
+	color: #23527c;
+}
+
+footer .divider {
+	padding: 0px 10px;
+}
+@media(max-width: 767px){
+	footer .contact-me, footer .bottom-contact {
+		display: inline-block;
+		width: 100%;
+		padding: 10px;
+		padding-bottom: 0px;
+		font-size: 12px;
+	}
+	footer .contact {
+		margin-bottom: 0px;
+	}
+	footer .divider {
+		display:none;
 	}
 }
