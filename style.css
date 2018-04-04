@@ -108,6 +108,12 @@ p {
 .light-blue {
 	background-color:green;
 }
+.line {
+	height: 3px;
+	width: 35px;
+	width: 6ch;
+	background-color: #55b0d0;
+}
 
 .navbar {
 	margin-bottom: 0px;
@@ -407,6 +413,38 @@ p {
 		background-image: url(img/faq.jpg);
 }
 
+
+.page-template-making-the-transition .section-menu {
+	background-image: url(img/pad.jpg);
+	text-align: center;
+}
+
+
+.page-template-making-the-transition .section-menu a {
+    /* font-size: 24px; */
+    padding: 5px 20px;
+    /* color: #2a0d45 */
+		text-transform: uppercase;
+}
+.page-template-making-the-transition #main h4 {
+	text-align: left;
+}
+
+.page-template-making-the-transition .mindful {
+	background-image: url(img/thought.jpg);
+	height:300px;
+	background-position: bottom;
+}
+
+.page-template-making-the-transition .life {
+	background-image: url(img/thought.jpg);
+	height:300px;
+	background-position: bottom;
+}
+
+.page-template-making-the-transition .up-holder {
+	text-align: center;
+}
 
 .page-template-clincians .background-img {
 	background-image: url(img/widian-about.jpg);
