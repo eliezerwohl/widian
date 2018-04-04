@@ -64,7 +64,10 @@ function mycustomtheme_send_mail_before_submit(){
     echo 'error';
     die();
 }
-
+require_once('wp-bootstrap-navwalker.php');
+	register_nav_menus( array(
+	  'primary' => __( 'Primary Menu', 'Widian' ),
+	) );
 
 
 // add_filter('tiny_mce_before_init', 'wpa_45815');

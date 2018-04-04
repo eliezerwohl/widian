@@ -32,6 +32,9 @@ img {
 	font-weight: 800;
 }
 
+.inline-block {
+	display: inline-block;
+}
 .emergency {
 	color:#961c1c;
 	text-align: center;
@@ -198,10 +201,15 @@ p {
 @media(max-width:767px){
 	.navbar {
 		position: absolute;
-		background-color: transparent;
+		background-color: white;
+		color:green;
 		top:0;
 		right:0;
 		left:0;
+		z-index: 9000;
+	}
+	#navbar a {
+		color:red;
 	}
 	.navbar-nav {
 		background-color: white;
@@ -326,6 +334,10 @@ p {
 .page-template-contact .contact-form {
 	background-color: #d9e8ea;
 	background-image: none;
+}
+
+.page-template-contact .txt {
+	text-align: center;
 }
 
 
