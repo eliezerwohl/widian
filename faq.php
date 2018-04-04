@@ -42,7 +42,6 @@
       <div class="col-md-12">
         <h3>Forms</h3>
         <p>Please print and complete the intake forms below prior to your first session</p>
-        <?php $counter = 0; $rowCount=count( get_field( 'forms' ) ); ?>
         <?php while ( have_rows( 'forms') ) { the_row();  ?>
           <a download href="<?php the_sub_field("file"); ?>"><span class="bold"><?php the_sub_field("text"); ?></span></a>
         <?php }; ?>

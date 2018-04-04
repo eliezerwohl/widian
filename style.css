@@ -323,6 +323,12 @@ p {
 }
 
 
+.list {
+	-webkit-column-count:2; /* Chrome, Safari, Opera */
+  -moz-column-count:2;
+	column-count:2;
+}
+
 @media(min-width: 992px) {
     .page-template-contact .map-container .table {
         display:table;
