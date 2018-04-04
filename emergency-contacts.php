@@ -10,7 +10,6 @@
   <?php while ( have_rows( 'content') ) { the_row();  ?>
   <div class="section">
     <div class="container">
-
       <h3><?php the_sub_field("title"); ?></h3>
       <div class="list">
       <?php if( have_rows( 'main') ){ ?>
