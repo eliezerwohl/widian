@@ -34,9 +34,11 @@
         <div class="col-md-6">
           <div class="table">
             <div class="txt">
+              <div class="inline-block">
               <p><span class="bold">Address:</span> 623 Georges Rd., North Brunswick, NJ 08902</p>
               <p><span class="bold">Telephone:</span> (908) 698-9164</p>
               <p><span class="bold">Email:</span> blnelsonlcsw@gmail.com</p>
+            </div>
             </div>
           </div>
         </div>

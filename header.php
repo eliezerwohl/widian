@@ -39,11 +39,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul  class="nav navbar-nav">
-          <?php wp_nav_menu(array(
-              'container' => false,
-              'depth'           => 1,
-             'items_wrap'      => '%3$s',
-            )); ?>
+            <?php
+              wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                // 'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'            => new WP_Bootstrap_Navwalker())
+              );
+            ?>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
