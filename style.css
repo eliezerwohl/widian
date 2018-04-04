@@ -32,6 +32,11 @@ img {
 	font-weight: 800;
 }
 
+.emergency {
+	color:#961c1c;
+	text-align: center;
+}
+
 .btn {
 	margin:auto;
 	display: block;
@@ -317,9 +322,6 @@ p {
 	background-image: none;
 }
 
-.page-template-contact .map-container {
-    margin-bottom: 100px
-}
 
 @media(min-width: 992px) {
     .page-template-contact .map-container .table {
@@ -353,12 +355,55 @@ p {
 }
 
 
+.page-template-faq .background-img {
+		background-image: url(img/faq.jpg);
+}
+.page-template-faq .background-img h1 {
+	margin-bottom:0px;
+	font-size: 24px;
+}
+
+.page-template-faq .answer {
+	display: none;
+}
+
+.page-template-faq  .faq-container {
+	padding-left: 10px;
+}
+
+.page-template-faq .icon-container,
+.page-template-faq  .toggleIcon {
+	color: #68467D;
+}
+
+.page-template-faq .answer-icon-container {
+	margin-right: 10px;
+}
+
+.page-template-faq .answer {
+	margin-bottom: 10px;
+}
+.page-template-faq .toggleIcon {
+	padding-right: 5px;
+}
+
+.page-template-faq .forms p {
+	text-align: center;
+}
+
+.page-template-faq .forms a {
+	display: block;
+	margin-bottom: 20px;
+}
+
+
 .page-template-clincians .background-img {
 	background-image: url(img/widian-about.jpg);
 	height:500px;
 	width: 100%;
 	background-position: top;
 }
+
 
 @media (min-width:1800px){
 	.page-template-clincians .section .background-img {
