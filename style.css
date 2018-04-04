@@ -403,6 +403,11 @@ p {
 }
 
 
+.page-template-videos .background-img {
+		background-image: url(img/faq.jpg);
+}
+
+
 .page-template-clincians .background-img {
 	background-image: url(img/widian-about.jpg);
 	height:500px;
