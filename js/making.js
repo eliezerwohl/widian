@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 		}, 1000);
   })
   $(".service-section a").on("click", function(e){
+    debugger
     e.preventDefault();
     var top = $(this.hash).offset().top
     $('html, body').animate({
