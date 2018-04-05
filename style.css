@@ -452,8 +452,6 @@ p {
 	background-image: url(img/pad.jpg);
 	text-align: center;
 }
-
-
 .page-template-making-the-transition .section-menu a {
     /* font-size: 24px; */
     padding: 5px 20px;
@@ -503,8 +501,6 @@ p {
 }
 
 
-
-
 @media (min-width:1800px){
 	.page-template-clincians .section .background-img {
 		height:700px;
@@ -516,6 +512,43 @@ p {
 		background-size: contain;
 	}
 }
+
+.page-template-services .section-menu {
+	text-align: center;
+	background-image: url(img/plant-2.jpg);
+}
+
+.page-template-services .section-menu a {
+	color:#b3d1d6;
+}
+.page-template-services .section-menu a:hover {
+	text-decoration: none;
+	opacity:0.7;
+}
+
+.page-template-services .rates {
+	background-color: #b3d1d6;
+}
+.page-template-services .rates h2 {
+	color:white;
+}
+
+
+
+
+
+.page-template-services .holder {
+	color:blue;
+	display:inline-block;
+}
+.page-template-services .holder:nth-child(1){
+	float:left;
+}
+.page-template-services .holder:nth-child(3){
+	float:right;
+}
+
+
 
 
 
