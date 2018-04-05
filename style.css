@@ -109,7 +109,7 @@ p {
 }
 
 .light-blue {
-	background-color:green;
+	background-color:#d9e8ea;
 }
 .line {
 	height: 3px;
@@ -458,11 +458,26 @@ p {
 	text-align: center;
 }
 
-.page-template-clincians .background-img {
+.page-template-clinicians .profile .background-img {
 	background-image: url(img/widian-about.jpg);
 	height:500px;
 	width: 100%;
 	background-position: top;
+}
+
+.page-template-clinicians .other-work {
+	background-image: url(img/plant.jpg);
+}
+.page-template-clinicians .social {
+	text-align: center;
+}
+.page-template-clinicians .social .img-holder {
+	display: inline-block;
+}
+.page-template-clinicians .social img {
+	height:50px;
+	width:auto;
+	margin:20px;
 }
 
 
