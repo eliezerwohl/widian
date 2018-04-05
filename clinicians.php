@@ -1,6 +1,6 @@
 <?php /* Template Name: Clincians */ ?>
 <?php get_header(); ?>
-<div class="section profile">
+<div class="section profile no-padding">
   <div class="background-img">
   </div>
   <div class="light-blue">
@@ -37,6 +37,15 @@
       <?php if( get_field("email_link")  ){ ?>
         <a target="_blank" href="<?php the_field('email_link') ; ?>"><img src="<?php bloginfo('template_url'); ?>/img/email.png"></a>
       <?php } ?>
+    </div>
+  </div>
+</div>
+<?php }; ?>
+<?php if( get_field("psy_today") ){ ?>
+<div class="section psy-today">
+  <div class="container">
+    <div class="img-holder">
+      <?php the_field("psy_today"); ?>
     </div>
   </div>
 </div>
