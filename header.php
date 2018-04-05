@@ -55,7 +55,9 @@
       <!-- /.container-fluid -->
     </nav>
     <div class="section-logo visible-sm visible-lg visible-md">
-      <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Couseling Services</span></h1>
-      <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
+      <a href="#">
+        <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Couseling Services</span></h1>
+        <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
+      </a>
     </div>
   <div id="main">

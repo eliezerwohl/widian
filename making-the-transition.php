@@ -49,7 +49,6 @@
 </div>
 <div class="section background-img life">
   <div class="container">
-
   </div>
 </div>
 <div id="bring" class="section">
@@ -91,7 +90,7 @@
 <div class="section">
   <div class="container">
     <h2>Questions?</h2>
-    <h4>Please contact Dr. Widian Nicola at (360) 904-9363 or via email at drwidiannicola@gmail.com should you have any questions.</h4>
+    <p class="bold">Please contact Dr. Widian Nicola at (360) 904-9363 or via email at drwidiannicola@gmail.com should you have any questions.</p>
   </div>
 </div>
 <?php get_footer(); ?>

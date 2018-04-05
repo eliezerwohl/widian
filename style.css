@@ -79,6 +79,15 @@ p {
 	padding-top:50px;
 	padding-bottom:50px;
 }
+#main .half-padding {
+	padding-top:25px;
+	padding-bottom:25px;
+}
+#main .no-padding {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
 #main .background-img {
 	background-repeat: no-repeat;
   background-size: cover;
@@ -115,7 +124,7 @@ p {
 	height: 3px;
 	width: 35px;
 	width: 6ch;
-	background-color: #55b0d0;
+	background-color: #6faa9f;
 }
 
 .navbar {
@@ -162,8 +171,14 @@ p {
 	color: white;
 }
 
+.navbar-default .open a, .navbar-default .open .dropdown-menu {
+	background-color: #6faa9f!important;
+}
+.navbar-default .open .dropdown-menu {
+	border-color: white;
+}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
-	background-color: #f5f5f5;
+	background-color: blue ;
 	color:black;
 }
 
@@ -220,6 +235,11 @@ p {
 .section-logo {
 	text-align: center;
 	margin:75px 0px;
+}
+.section-logo a:hover {
+	opacity:0.7 !important;
+	display: block;
+	text-decoration: none!important;
 }
 /* fixes section logo posistion on ie */
 .iefix {
@@ -422,10 +442,12 @@ p {
 
 
 .page-template-videos .background-img {
-		background-image: url(img/faq.jpg);
+	background-image: url(img/faq.jpg);
 }
 
-
+.page-template-making-the-transition h2 {
+	color:#6FAA9F;
+}
 .page-template-making-the-transition .section-menu {
 	background-image: url(img/pad.jpg);
 	text-align: center;
@@ -468,10 +490,10 @@ p {
 .page-template-clinicians .other-work {
 	background-image: url(img/plant.jpg);
 }
-.page-template-clinicians .social {
+.page-template-clinicians .social, .page-template-clinicians .psy-today {
 	text-align: center;
 }
-.page-template-clinicians .social .img-holder {
+.page-template-clinicians .social .img-holder, .page-template-clinicians .psy-today .img-holder {
 	display: inline-block;
 }
 .page-template-clinicians .social img {
@@ -479,6 +501,8 @@ p {
 	width:auto;
 	margin:20px;
 }
+
+
 
 
 @media (min-width:1800px){
