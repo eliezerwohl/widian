@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h3>El contacto</h3>
+        <h2>Contact</h2>
         <div class="input-holder">
           <input type="text">
         </div>
@@ -18,9 +18,9 @@
           <input type="text">
         </div>
         <div class="input-holder">
-          <textarea></textarea>
+          <textarea rows="10"></textarea>
           <button class="btn btn-darkblue">Submit</div>
-          <p>I am committed to your privacy. Do not include confidential or private information regarding your health condition in this form or any other form found on this website. This form is for general questions or messages. By clicking "send," you agree that the phone number you provide may be used to contact you (including autodialed or pre-recorded calls). Consent is not a condition of purchase.</p>
+          <p class="italic">I am committed to your privacy. Do not include confidential or private information regarding your health condition in this form or any other form found on this website. This form is for general questions or messages. By clicking "send," you agree that the phone number you provide may be used to contact you (including autodialed or pre-recorded calls). Consent is not a condition of purchase.</p>
         </div>
       </div>
     </div>
