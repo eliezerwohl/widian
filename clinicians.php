@@ -1,7 +1,7 @@
 <?php /* Template Name: Clincians */ ?>
 <?php get_header(); ?>
 <div class="section profile no-padding">
-  <div class="background-img">
+  <div class="background-img no-scroll">
   </div>
   <div class="light-blue">
     <div class="container">

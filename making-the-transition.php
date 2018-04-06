@@ -1,6 +1,6 @@
 <?php /* Template Name: Making The Transition */ ?>
 <?php get_header(); ?>
-<div class="section background-img section-menu">
+<div class="section background-img section-menu scroll">
   <div class="container">
     <h1>Making the Transition Group</h1>
     <div class="row sections">
@@ -33,7 +33,7 @@
     <div class="up-holder"><a href="#"><i class="fa fa-angle-up"></i></a></div>
   </div>
 </div>
-<div class="section background-img  mindful">
+<div class="section background-img  mindful scroll">
 </div>
 <div id="registration" class="section">
   <div class="container">
@@ -47,7 +47,7 @@
     <div class="up-holder"><a href="#"><i class="fa fa-angle-up"></i></a></div>
   </div>
 </div>
-<div class="section background-img life">
+<div class="section background-img life scroll">
   <div class="container">
   </div>
 </div>
@@ -62,7 +62,6 @@
     <?php  } ?>
   </div>
 </div>
-
 <div id="location" class="section">
   <div class="container">
     <h2>Location</h2>

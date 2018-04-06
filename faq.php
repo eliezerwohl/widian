@@ -1,6 +1,6 @@
 <?php /* Template Name: Faq*/ ?>
 <?php get_header(); ?>
-<div class="section background-img">
+<div class="section background-img scroll">
   <div class="container">
     <div class='inner'>
       <div class="text">
@@ -10,11 +10,11 @@
   </div>
 </div>
 <?php if( have_rows( 'content') ){ ?>
-<div class="section">
+<div class="section faqs">
   <div class="container">
     <div class='row'>
       <div class="col-md-12">
-        <h3>FAQS</h3>
+        <h2>FAQS</h2>
         <?php while ( have_rows( 'content') ) : the_row(); ?>
         <div class="faq-container">
           <div class="showHide">
@@ -40,8 +40,8 @@
   <div class="container">
     <div class='row'>
       <div class="col-md-12">
-        <h3>Forms</h3>
-        <p>Please print and complete the intake forms below prior to your first session</p>
+        <h2>Forms</h2>
+        <p>Please print and complete the intake forms below prior to your first session.</p>
         <?php while ( have_rows( 'forms') ) { the_row();  ?>
           <a download href="<?php the_sub_field("file"); ?>"><span class="bold"><?php the_sub_field("text"); ?></span></a>
         <?php }; ?>

@@ -6,6 +6,5 @@
 				<p>The page you are looking for has moved, or no longer exists.</p>
 		</div>
 	</div>
-
 </div>
 <?php get_footer(); ?>
