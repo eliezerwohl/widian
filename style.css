@@ -165,30 +165,19 @@ p {
 .navbar-default .navbar-collapse, .navbar-default .navbar-toggle {
 	border:0px solid transparent;
 }
-.navbar-default .navbar-toggle {
+/* .navbar-default .navbar-toggle {
 	padding-top:4px;
 	padding-bottom:2px;
-}
+} */
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #2a0d45;
-	margin-left: 5px;
-	width: 20px;
+	background-color: #35434a;
 }
 .navbar-default .navbar-toggle:hover {
-	background-color: #2a0d45
+	background-color: #35434a;
 }
 .navbar-default .navbar-toggle:hover .icon-bar {
 	background-color: white;
-}
-
-.navbar-default .navbar-toggle .toggle-text {
-	font-size: 10px;
-	margin-top: 1px;
-}
-
-.navbar-default .navbar-toggle:hover .toggle-text {
-	color: white;
 }
 
 .navbar-default .open a, .navbar-default .open .dropdown-menu {
@@ -214,6 +203,12 @@ p {
 }
 #navbar li a:active {
 	font-style: italic;
+}
+
+@media (max-width:767px){
+	.container-fluid>.navbar-header {
+		margin-top:10px;
+	}
 }
 /* #navbar li:not(.active){
 	opacity: .7;
@@ -244,11 +239,13 @@ p {
 		z-index: 9000;
 	}
 	#navbar a {
-		color:red;
+		color:#354349;
 	}
 	.navbar-nav {
-		background-color: white;
-		color:blue;
+		background-color: #f7f7f7;
+	}
+	.navbar-default .open a, .navbar-default .open .dropdown-menu {
+		background-color:#f7f7f7 !important;
 	}
 }
 
@@ -296,7 +293,7 @@ p {
 		padding:0px;
 	}
 	#main {
-		margin-top:100px;
+		margin-top:150px;
 	}
 }
 
@@ -308,7 +305,19 @@ p {
 	vertical-align: center;
 	margin:5px;
 }
+@media(max-width:767px){
+	.page-template-home .about h2 {
+		padding:50px 0px;
+		background-image: url(img/plant.jpg);
+		background-color:white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left:-15px;
+		margin-right:-15px;
+		background-position: bottom;
+	}
 
+}
 .page-template-home .about {
 	padding-top: 0px;
 }
@@ -357,8 +366,20 @@ p {
 }
 
 .page-template-home .clinicians h2 {
-	margin-bottom:  75px;
+	margin-bottom:  75px !important;
 }
+
+@media(max-width:767px){
+	.page-template-home .clinicians img {
+		margin-bottom:75px;
+	}
+	.page-template-home .clinicians h2 {
+		margin-bottom:  50px !important;
+	}
+	.page-template-home .background-img {
+		height: auto;
+	}
+})
 
 .page-template-home .approach {
 	background-image: url(img/breather.jpg);
@@ -474,10 +495,10 @@ p {
 	padding-left: 10px;
 }
 
-.page-template-faq .icon-container,
+/* .page-template-faq .icon-container,
 .page-template-faq  .toggleIcon {
 	color: #68467D;
-}
+} */
 
 .page-template-faq .answer-icon-container {
 	margin-right: 10px;
@@ -529,7 +550,7 @@ p {
 .page-template-making-the-transition .section-menu a {
     /* font-size: 24px; */
     padding: 5px 20px;
-    /* color: #2a0d45 */
+    /* color: #35434a */
 		text-transform: uppercase;
 }
 .page-template-making-the-transition #main h4 {
@@ -674,10 +695,6 @@ p {
 	padding-top: 0px !important;
 }
 
-
-
-
-
 footer {
 	padding: 20px 15px;
 	color: white;
@@ -696,7 +713,7 @@ footer .contact-me, footer .bottom-contact {
 	padding:10px 10px;
 }
 footer .contact-me:hover {
-	color: #23527c;
+	color: #35434a;
 }
 
 footer .divider {
