@@ -351,10 +351,13 @@ p {
 .page-template-home .about p {
 	margin-bottom: 0px;
 }
-.page-template-home .background-img {
+.page-template-home .services {
 	background-image: url(img/bench.jpg);
 	height:400px;
 	width: 100%;
+}
+.page-template-home .approach {
+	background-image: url(img/breather.jpg) !important ;
 }
 
 .page-template-home .background-img .container {
@@ -363,7 +366,6 @@ p {
 	display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .page-template-home .background-img .inner  {
 	background-color:rgba(255,255,255, 0.7);
@@ -411,10 +413,6 @@ p {
 	}
 })
 
-.page-template-home .approach {
-	background-image: url(img/breather.jpg);
-	height:100%;
-}
 .page-template-home .approach h2 {
 	margin-top:10px;
 }
@@ -469,6 +467,14 @@ p {
 	margin-bottom:0px;
 }
 
+@media(max-width:767px){
+	.page-template-home .clinicians .col-md-6:last-child img {
+		margin-bottom: 0px;
+	}
+	.page-template-home .approach .inner {
+		margin:0;
+	}
+}
 
 
 
@@ -513,8 +519,7 @@ p {
 		padding-top:85px;
 }
 .page-template-faq .background-img h1 {
-	margin-bottom:0px;
-	font-size: 24px;
+	margin-bottom:0px !important;
 }
 
 .page-template-faq .answer {
@@ -635,7 +640,7 @@ p {
 	background-position: center;
 }
 .page-template-clinicians .other-work h2 {
-	margin-bottom:0px;
+	margin-bottom:0px!important;
 }
 .page-template-clinicians .social, .page-template-clinicians .psy-today {
 	text-align: center;
@@ -669,16 +674,17 @@ p {
 	}
 }
 
-
-.page-template-services .holder {
-	color:blue;
-	display:inline-block;
-}
-.page-template-services .holder:nth-child(1){
-	float:left;
-}
-.page-template-services .holder:nth-child(3){
-	float:right;
+@media(min-width:767px){
+	.page-template-services .holder {
+		color:blue;
+		display:inline-block;
+	}
+	.page-template-services .holder:nth-child(1){
+		float:left;
+	}
+	.page-template-services .holder:nth-child(3){
+		float:right;
+	}
 }
 
 
@@ -723,6 +729,19 @@ p {
 
 .page-template-services .cancellation  {
 	padding-top: 0px !important;
+}
+
+@media(max-width:767px){
+
+	.page-template-making-the-transition .sections {
+		display: none;
+	}
+	.page-template-services .section-menu h2 {
+    font-size: 24px !important;
+	}
+	.page-template-services .holder:not(:last-child) {
+		margin-bottom: 25px;
+	}
 }
 
 footer {
