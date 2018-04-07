@@ -1,7 +1,11 @@
 <?php /* Template Name: Clincians */ ?>
+
 <?php get_header(); ?>
 <div class="section profile no-padding">
   <div class="background-img no-scroll">
+  </div>
+  <div class="mobile-pic visible-xs text-center">
+    <img src="<?php bloginfo('template_url'); ?>/img/mobile-widian.png">
   </div>
   <div class="light-blue">
     <div class="container">
