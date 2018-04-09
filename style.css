@@ -101,6 +101,40 @@ p {
 	background-attachment: fixed;
 	background-position: center;
 }
+
+::-webkit-input-placeholder {
+  opacity: .5;
+  font-style: italic
+}
+
+::-moz-placeholder {
+  opacity: .5;
+  font-style: italic
+}
+
+:-ms-input-placeholder {
+  opacity: .5;
+  font-style: italic
+}
+
+:-moz-placeholder {
+  opacity: .5;
+  font-style: italic
+}
+
+input,
+textarea {
+	border:none;
+	border:1px solid #35434a;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #6faa9f;
+	/* #6faa9f */
+  /* border: 1px solid black; */
+}
+
 .contact-form .input-holder {
 	width: 50%;
 	float:left;
@@ -300,6 +334,22 @@ p {
 	font-family: 'Oswald', sans-serif;
 }
 
+.ie-fix,
+.section-logo a:focus
+.section-logo h1:focus,
+.section-logo h4:focus {
+	-webkit-appearance:none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.section-logo a,
+.section-logo h1:active,
+.section-logo h1:focus,
+.section-logo h1:visited {
+	text-decoration: none !important;
+}
+
 .section-logo h4 {
 	font-family: 'Oswald', sans-serif;
 }
@@ -319,6 +369,8 @@ p {
 		margin-top:150px;
 	}
 }
+
+
 
 .section-logo .logo-line {
 	height:2px;
