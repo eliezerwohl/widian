@@ -21,6 +21,9 @@ a {
 a:hover {
 	color: black;
 }
+#main p a {
+	 font-style: italic !important;
+}
 img {
 	max-width: 100%;
 }
@@ -50,6 +53,12 @@ img {
 	background-color:#35434a;
 	color:white;
 }
+.btn-darkblue:hover,
+.btn-darkblue:active,
+.btn-darkblue:visited {
+	color:#35434a;
+	background-color:white;
+}
 .ajax-loader {
 	display: none !important;
 }
@@ -76,7 +85,7 @@ p {
 
 
 #main {
-	min-height: calc(100vh - 278px);
+	min-height: calc(100vh - 420px);
 }
 
 .section {
@@ -333,6 +342,11 @@ textarea:focus {
 	margin-bottom:0px;
 	font-family: 'Oswald', sans-serif;
 }
+@media(min-width:767px){
+	.section-logo h1 {
+		font-size: 40px;
+	}
+}
 
 .ie-fix,
 .section-logo a:focus
@@ -370,11 +384,9 @@ textarea:focus {
 	}
 }
 
-
-
 .section-logo .logo-line {
 	height:2px;
-	width: 155px;
+	width: 175px;
 	background-color:#354349;
 	display: inline-block;
 	vertical-align: center;
@@ -449,6 +461,47 @@ textarea:focus {
 	height:371px;
 	width:auto;
 }
+
+.page-template-home .clinicians h4 {
+	margin-top:10px;
+	margin-bottom:0px;
+}
+
+/* .navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+    background: transparent !important;
+  } */
+
+  .navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+  .navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .navbar-toggle .middle-bar {
+    opacity: 0;
+  }
+  .navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+
+  .navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+  }
+  .navbar-toggle.collapsed  .middle-bar {
+    opacity: 1;
+  }
+  .navbar-toggle.collapsed  .bottom-bar {
+    transform: rotate(0);
+  }
+
 
 .page-template-home .clinicians h2 {
 	margin-bottom:  75px !important;
@@ -684,7 +737,6 @@ textarea:focus {
 }
 
 .page-template-clinicians .profile .background-img {
-	background-image: url(img/widian-about.jpg);
 	height:500px;
 	width: 100%;
 	background-position: top;

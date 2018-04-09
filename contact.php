@@ -29,15 +29,15 @@
     <div class="container">
       <div class="map-container row">
         <div class="col-sm-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.267014780227!2d-74.45427048472149!3d40.469357479359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c67dfa72f16b%3A0x58735e048f02b2c0!2s623+Georges+Rd%2C+North+Brunswick+Township%2C+NJ+08902!5e0!3m2!1sen!2sus!4v1519668371211" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.4050590490815!2d-74.74663978511826!3d40.26675147267206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e282d91fae75%3A0x8e950f01fdedd2ec!2s24+Rossa+Ave%2C+Lawrence+Township%2C+NJ+08648!5e0!3m2!1sen!2sus!4v1523295120222" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
         <div class="col-sm-6">
           <div class="table">
             <div class="txt">
               <div class="inline-block">
-              <p><span class="bold">Address:</span> 623 Georges Rd., North Brunswick, NJ 08902</p>
-              <p><span class="bold">Telephone:</span> (908) 698-9164</p>
-              <p><span class="bold">Email:</span> blnelsonlcsw@gmail.com</p>
+              <p><span class="bold">Address:</span> <?php the_field('address','option'); ?></p>
+              <p><span class="bold">Telephone:</span> <?php the_field('phone','option'); ?></p>
+              <p><span class="bold">Email:</span> <?php the_field('email','option'); ?></p>
             </div>
             </div>
           </div>

@@ -1,9 +1,9 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
-<div class="section about slideInLeft animated">
+<div class="section about">
   <div class="container">
-    <h2><img src="<?php bloginfo('template_url'); ?>/img/noun-left.png">About Us<img src="<?php bloginfo('template_url'); ?>/img/noun-right.png"></h2>
-    <p>Proudly serving Mercer, Middlesex, Hunterdon, Bucks counties and beyond, Nicola Counseling Services, LLC is a professional counseling agency formed to meet the needs of individuals and families. All our clinicians are licensed and offer personalized approaches to all those we serve. We believe that therapy can greatly improve connection, heal emotional wounds, improve self esteem, and foster safety and security. Our unique therapeutic approach is rooted in our understanding of attachment and interpersonal relational dynamics. Based on our clients' needs, our highly trained clinicians use various treatment modalities, but are chiefly interested in building authentic relationships with clients. Contact us. </p>
+    <h2>About Us</h2>
+    <p>Proudly serving Mercer, Middlesex, Hunterdon, Bucks counties and beyond, Nicola Counseling Services, LLC is a professional counseling agency formed to meet the needs of individuals and families. All our clinicians are licensed and offer personalized approaches to all those we serve. We believe that therapy can greatly improve connection, heal emotional wounds, improve self esteem, and foster safety and security. Our unique therapeutic approach is rooted in our understanding of attachment and interpersonal relational dynamics. Based on our clients' needs, our highly trained clinicians use various treatment modalities, but are chiefly interested in building authentic relationships with clients. <a href="#">Contact us. </a></p>
   </div>
 </div>
 <div class="section background-img services scroll">
@@ -11,9 +11,9 @@
     <div class='inner'>
       <div class="text">
         <h2>Services</h2>
-        <p>Individual Therapy</p>
-        <p>Couples Therapy</p>
-        <p>Making the Transition Group</p>
+        <a href="<?php echo home_url(); ?>/psychotherapy#individual"><p>Individual Therapy</p></a>
+        <a href="<?php echo home_url(); ?>/psychotherapy#couples"><p>Couples Therapy</p></a>
+        <a href="<?php echo home_url(); ?>/psychotherapy#making"><p>Making the Transition Group</p></a>
       </div>
     </div>
   </div>
@@ -23,10 +23,16 @@
     <div class="row">
       <h2>Clinicians</h2>
       <div class="col-md-6">
-        <img src="<?php bloginfo('template_url'); ?>/img/profile-widian.jpg">
+        <a href="#">
+          <img src="<?php bloginfo('template_url'); ?>/img/profile-widian.jpg">
+          <h4>Dr. Widian Nicola</h4>
+        </a>
       </div>
       <div class="col-md-6">
-        <img src="<?php bloginfo('template_url'); ?>/img/profile-clair.jpg">
+        <a href="#">
+          <img src="<?php bloginfo('template_url'); ?>/img/profile-clair.jpg">
+          <h4>Clair Tattoli</h4>
+        </a>
       </div>
     </div>
   </div>
@@ -50,7 +56,12 @@
         <img src="<?php bloginfo('template_url'); ?>/img/temp-pod.jpg">
       </div>
     </div>
-    <p>The Lived Experience Project with Widian Nicola is a podcast show that explores unique and evocative narratives rarely heard in mainstream media. Each season focuses on a lesser known and marginalized population and how these oral histories unveil the often complex nature of the shared human condition. Through this, we hope to build communities infused with awareness and compassion.</p>
+    <p>The Lived Experience Project with Widian Nicola is a podcast show that
+      explores unique and evocative narratives rarely heard in mainstream media.
+       Each season focuses on a lesser known and marginalized population and
+       how these oral histories unveil the often complex nature of the shared
+        human condition. Through this, we hope to build communities infused with
+        awareness and compassion.  To view a full list of podcasts, <a>click here</a></p>
   </div>
 </div>
 <div class="section contact-form background-img scroll">

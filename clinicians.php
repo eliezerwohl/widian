@@ -1,15 +1,23 @@
 <?php /* Template Name: Clincians */ ?>
-
 <?php get_header(); ?>
 <div class="section profile no-padding">
+  <?php if (get_field("full_size_photo") ) { ?>
+  <style>
+  .page-template-clinicians .profile .background-img {
+  	background-image: url(<?php the_field("full_size_photo"); ?>);
+  }
+  </style>
   <div class="background-img no-scroll">
   </div>
+  <?php } ?>
+  <?php if (get_field("mobile_photo"))  { ?>
   <div class="mobile-pic visible-xs text-center">
-    <img src="<?php bloginfo('template_url'); ?>/img/mobile-widian.png">
+    <img src="<?php the_field('mobile_photo'); ?>
   </div>
+  <?php }  ?>
   <div class="light-blue">
     <div class="container">
-       <h1>Dr Widian Nicola</h1>
+       <h1><?php the_field("name"); ?></h1>
        <?php the_field("bio"); ?>
     </div>
   </div>
