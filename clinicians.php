@@ -12,7 +12,7 @@
   <?php } ?>
   <?php if (get_field("mobile_photo"))  { ?>
   <div class="mobile-pic visible-xs text-center">
-    <img src="<?php the_field('mobile_photo'); ?>
+    <img alt="<?php the_field('name'); ?>" src="<?php the_field('mobile_photo'); ?>">
   </div>
   <?php }  ?>
   <div class="light-blue">

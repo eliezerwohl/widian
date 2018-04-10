@@ -19,6 +19,12 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
+    <!-- <div class="section-logo visible-sm visible-lg visible-md">
+      <a href="<?php echo home_url(); ?>">
+        <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Counseling Services</span></h1>
+        <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
+      </a>
+    </div> -->
     <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->

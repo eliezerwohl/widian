@@ -23,13 +23,13 @@
     <div class="row">
       <h2>Clinicians</h2>
       <div class="col-md-6">
-        <a href="#">
+        <a href="<?php the_field('clinician_1_pagelink'); ?>">
           <img src="<?php bloginfo('template_url'); ?>/img/profile-widian.jpg">
           <h4>Dr. Widian Nicola</h4>
         </a>
       </div>
       <div class="col-md-6">
-        <a href="#">
+        <a href="<?php the_field('clinician_2_pagelink'); ?>">
           <img src="<?php bloginfo('template_url'); ?>/img/profile-clair.jpg">
           <h4>Clair Tattoli</h4>
         </a>
@@ -61,7 +61,7 @@
        Each season focuses on a lesser known and marginalized population and
        how these oral histories unveil the often complex nature of the shared
         human condition. Through this, we hope to build communities infused with
-        awareness and compassion.  To view a full list of podcasts, <a>click here</a></p>
+        awareness and compassion.  To view a full list of podcasts, <a target="_blank" href='https://www.livedexperienceproject.org/'>click here</a></p>
   </div>
 </div>
 <div class="section contact-form background-img scroll">
