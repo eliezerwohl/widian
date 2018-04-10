@@ -1,9 +1,9 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
-<div class="section about slideInLeft animated">
+<div class="section about">
   <div class="container">
     <h2>About Us</h2>
-    <p>Proudly serving Mercer, Middlesex, Hunterdon, Bucks counties and beyond, Nicola Counseling Services, LLC is a professional counseling agency formed to meet the needs of individuals and families. All our clinicians are licensed and offer personalized approaches to all those we serve. We believe that therapy can greatly improve connection, heal emotional wounds, improve self esteem, and foster safety and security. Our unique therapeutic approach is rooted in our understanding of attachment and interpersonal relational dynamics. Based on our clients' needs, our highly trained clinicians use various treatment modalities, but are chiefly interested in building authentic relationships with clients. Contact us. </p>
+    <p>Proudly serving Mercer, Middlesex, Hunterdon, Bucks counties and beyond, Nicola Counseling Services, LLC is a professional counseling agency formed to meet the needs of individuals and families. All our clinicians are licensed and offer personalized approaches to all those we serve. We believe that therapy can greatly improve connection, heal emotional wounds, improve self esteem, and foster safety and security. Our unique therapeutic approach is rooted in our understanding of attachment and interpersonal relational dynamics. Based on our clients' needs, our highly trained clinicians use various treatment modalities, but are chiefly interested in building authentic relationships with clients. <a href="#">Contact us. </a></p>
   </div>
 </div>
 <div class="section background-img services scroll">
@@ -11,9 +11,9 @@
     <div class='inner'>
       <div class="text">
         <h2>Services</h2>
-        <p>Individual Therapy</p>
-        <p>Couples Therapy</p>
-        <p>Making the Transition Group</p>
+        <a href="<?php echo home_url(); ?>/psychotherapy#individual"><p>Individual Therapy</p></a>
+        <a href="<?php echo home_url(); ?>/psychotherapy#couples"><p>Couples Therapy</p></a>
+        <a href="<?php echo home_url(); ?>/psychotherapy#making"><p>Making the Transition Group</p></a>
       </div>
     </div>
   </div>
@@ -23,10 +23,16 @@
     <div class="row">
       <h2>Clinicians</h2>
       <div class="col-md-6">
-        <img src="<?php bloginfo('template_url'); ?>/img/profile-widian">
+        <a href="<?php the_field('clinician_1_pagelink'); ?>">
+          <img src="<?php bloginfo('template_url'); ?>/img/profile-widian.jpg">
+          <h4>Dr. Widian Nicola</h4>
+        </a>
       </div>
       <div class="col-md-6">
-        <img src="<?php bloginfo('template_url'); ?>/img/profile-clair">
+        <a href="<?php the_field('clinician_2_pagelink'); ?>">
+          <img src="<?php bloginfo('template_url'); ?>/img/profile-clair.jpg">
+          <h4>Clair Tattoli</h4>
+        </a>
       </div>
     </div>
   </div>
@@ -47,10 +53,15 @@
     <h2>Lived Experience Project</h2>
     <div class='row'>
       <div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
-        <img src="<?php bloginfo('template_url'); ?>/img/temp-pod">
+        <img src="<?php bloginfo('template_url'); ?>/img/temp-pod.jpg">
       </div>
     </div>
-    <p>The Lived Experience Project with Widian Nicola is a podcast show that explores unique and evocative narratives rarely heard in mainstream media. Each season focuses on a lesser known and marginalized population and how these oral histories unveil the often complex nature of the shared human condition. Through this, we hope to build communities infused with awareness and compassion.</p>
+    <p>The Lived Experience Project with Widian Nicola is a podcast show that
+      explores unique and evocative narratives rarely heard in mainstream media.
+       Each season focuses on a lesser known and marginalized population and
+       how these oral histories unveil the often complex nature of the shared
+        human condition. Through this, we hope to build communities infused with
+        awareness and compassion.  To view a full list of podcasts, <a target="_blank" href='https://www.livedexperienceproject.org/'>click here</a></p>
   </div>
 </div>
 <div class="section contact-form background-img scroll">
@@ -59,19 +70,19 @@
       <div class="col-md-12">
         <h2>Contact</h2>
         <div class="input-holder">
-          <input type="text">
+          <input type="text" placeholder="first name">
         </div>
         <div class="input-holder">
-          <input type="text">
+          <input type="text" placeholder="last name">
         </div>
         <div class="input-holder">
-          <input type="text">
+          <input type="text" placeholder="phone">
         </div>
         <div class="input-holder">
-          <input type="text">
+          <input type="text" placeholder="email">
         </div>
         <div class="input-holder">
-          <textarea rows="10"></textarea>
+          <textarea rows="10" placeholder="message"></textarea>
           <button class="btn btn-darkblue">Submit</div>
           <p class="italic">I am committed to your privacy. Do not include confidential or private information regarding your health condition in this form or any other form found on this website. This form is for general questions or messages. By clicking "send," you agree that the phone number you provide may be used to contact you (including autodialed or pre-recorded calls). Consent is not a condition of purchase.</p>
         </div>

@@ -3,7 +3,7 @@
 <div class="section emg">
   <div class="container">
     <h1>Emergency Contacts</h1>
-    <p class="emergency">IF you or a loved one is having a psychiatric emerge</p>
+    <p class="emergency">If you or a loved one is having a psychiatric emergency, CALL 9-1-1 or report to your nearest emergency room.</p>
   </div>
 </div>
 <?php if( have_rows( 'content') ){ ?>

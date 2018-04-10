@@ -19,15 +19,21 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
+    <!-- <div class="section-logo visible-sm visible-lg visible-md">
+      <a href="<?php echo home_url(); ?>">
+        <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Counseling Services</span></h1>
+        <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
+      </a>
+    </div> -->
     <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
           </button>
           <a  class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">
             <div class="section-logo mobile">
