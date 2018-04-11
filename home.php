@@ -3,7 +3,7 @@
 <div class="section about">
   <div class="container">
     <h2>About Us</h2>
-    <p>Proudly serving Mercer, Middlesex, Hunterdon, Bucks counties and beyond, Nicola Counseling Services, LLC is a professional counseling agency formed to meet the needs of individuals and families. All our clinicians are licensed and offer personalized approaches to all those we serve. We believe that therapy can greatly improve connection, heal emotional wounds, improve self esteem, and foster safety and security. Our unique therapeutic approach is rooted in our understanding of attachment and interpersonal relational dynamics. Based on our clients' needs, our highly trained clinicians use various treatment modalities, but are chiefly interested in building authentic relationships with clients. <a href="#">Contact us. </a></p>
+    <p>Proudly serving Mercer, Middlesex, Hunterdon, Bucks counties and beyond, Nicola Counseling Services, LLC is a professional counseling agency formed to meet the needs of individuals and families. All our clinicians are licensed and offer personalized approaches to all those we serve. We believe that therapy can greatly improve connection, heal emotional wounds, improve self esteem, and foster safety and security. Our unique therapeutic approach is rooted in our understanding of attachment and interpersonal relational dynamics. Based on our clients' needs, our highly trained clinicians use various treatment modalities, but are chiefly interested in building authentic relationships with clients. <a href="<?php echo home_url(); ?>/contact">Contact us. </a></p>
   </div>
 </div>
 <div class="section background-img services scroll">
@@ -44,6 +44,7 @@
         <h2>Approach</h2>
         <p>We all accrue wounding in the course of living. Finding the right therapist is the best way to find help to heal wounds. To support those who seek change, Nicola Counseling Services clinicians take an authentic, non-judgmental approach that is free of trend-driven techniques. By providing a safe and respectful space that values and nourishes the healing process, clients can expect non-pathologized care. Given that conflict comes in many forms, our therapeutic approach is equally personalized. We work well with people who appreciate a confidential and integrative approach that is pragmatic and tailored to unique experiences. We assist individuals who seek to learn new coping strategies and heal emotional bonds in order to feel safe, secure, and connected. We partner with clients who want to make positive changes in their lives. We are not in-network providers, but will work with your out-of-network benefits. This is the best way we can protect your privacy. Those without insurance or reimbursement can expect a reduced fee. We believe therapy works best when a high standard of confidentiality is met.
         </p>
+            <p class="bold text-center italic">No matter where the journey has taken you, all are welcome here.</p>
       </div>
     </div>
   </div>
@@ -90,7 +91,4 @@
     </div>
   </div>
 </div>
-
-
-
 <?php get_footer(); ?>

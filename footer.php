@@ -14,7 +14,7 @@
 		<a class="contact-me" target="_blank" href="tel:<?php echo str_replace(' ', '', get_field('phone', 'option')); ?>"><i class="fa fa-phone" aria-hidden="true"></i> <span itemprop="telephone"><?php the_field("phone", "option"); ?></span></a>
 	</div>
 	<div>
-		<div class="bottom-contact">&copy; <?php echo date("Y"); ?> Nicola Counseling Services, LLC</div><div class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></div>
+		<div class="bottom-contact">&copy; <?php echo date("Y"); ?> Nicola Counseling Services, LLC</div><div class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design, LLC</a></div>
 	</div>
 	<?php wp_footer(); ?>
 	</footer>

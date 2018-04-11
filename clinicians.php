@@ -47,7 +47,7 @@
         <a target="_blank" href="<?php the_field('linkedin_link') ; ?>"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png"></a>
       <?php } ?>
       <?php if( get_field("email_link")  ){ ?>
-        <a target="_blank" href="<?php the_field('email_link') ; ?>"><img src="<?php bloginfo('template_url'); ?>/img/email.png"></a>
+        <a target="_blank" href="mailto:<?php the_field('email_link') ; ?>"><img src="<?php bloginfo('template_url'); ?>/img/email.png"></a>
       <?php } ?>
     </div>
   </div>

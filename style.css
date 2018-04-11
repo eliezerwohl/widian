@@ -87,6 +87,13 @@ p {
 	min-height: calc(100vh - 480px);
 }
 
+#main ul {
+	margin-bottom: 0px;
+}
+#main  ul li:not(:last-child) {
+	margin-bottom: 10px !important;
+}
+
 .section {
 	padding-top:50px;
 	padding-bottom:50px;
@@ -133,7 +140,7 @@ p {
 input,
 textarea {
 	border:none;
-	border:1px solid #35434a;
+	border:1px solid #c3c3c3;
 }
 
 input:focus,
@@ -435,6 +442,7 @@ margin-bottom:0px;
 .section-logo .logo-line {
 	height:2px;
 	width: 250px;
+	width:27ch;
 	background-color:#354349;
 	display: inline-block;
 	margin:5px;
@@ -443,14 +451,16 @@ margin-bottom:0px;
 @media(max-width:767px){
 	.section-logo .logo-line {
 		width:155px;
+		width:16ch;
 	}
 }
-@media(max-width:400px){
+@media(max-width:500px){
 	.section-logo h1 {
 		font-size: 28px;
 	}
 	.section-logo .logo-line {
 		width: 110px;
+		width:13ch;
 	}
 }
 @media(max-width:767px){
@@ -737,19 +747,28 @@ margin-bottom:0px;
 @media(max-width:767px){
 	.page-template-making-the-transition #main h4 {
 		color:#6faa9f;
+		line-height: 1.4;
 	}
 }
 
 .page-template-making-the-transition .mindful {
 	background-image: url(img/mindful-2.jpg);
 	height:300px;
-	/* background-position: bottom; */
 }
 
 .page-template-making-the-transition .life {
 	background-image: url(img/thought-2.jpg);
 	height:300px;
-	/* background-position: bottom; */
+}
+@media(max-width:767px){
+	.page-template-making-the-transition .life {
+	background-position: top  !important;
+	background-attachment: initial  !important;
+	}
+	.page-template-making-the-transition .mindful {
+	background-position: bottom  !important;
+	background-attachment: initial  !important;
+	}
 }
 
 .page-template-making-the-transition .up-holder {
@@ -864,12 +883,7 @@ margin-bottom:0px;
  {
 	margin-bottom: 0px;
 }
-#main .page-template-services ul {
-	margin-bottom: 0px;
-}
-#main .page-template-services ul li:not(:last-child) {
-	margin-bottom: 10px;
-}
+
 .page-template-services .services-2 {
 	background-color: #f7f7f7;
 }
