@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
     <?php wp_head(); ?>
   </head>
-  <body <?php body_class(); ?> >
+  <body <?php body_class(); ?>>
     <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,8 +31,11 @@
           </button>
           <a  class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">
             <div class="section-logo mobile">
-              <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Counseling Services</span></h1>
-              <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
+              <div class="parent">
+                <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Counseling Services</span></h1>
+                <h4>LLC</h4>
+                <div class="line-container"><span class="logo-line"></span></div>
+              </div>
             </div>
           </a>
         </div>
@@ -57,7 +60,8 @@
     <div class="section-logo visible-sm visible-lg visible-md">
       <a href="<?php echo home_url(); ?>">
         <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Counseling Services</span></h1>
-        <h4><span class="parent"><span class="logo-line"></span></span>LLC<span class="parent"><span class="logo-line"></span></span></h4>
+        <h4>LLC</h4>
+          <div class="line-container"><span class="logo-line"></span></div>
       </a>
     </div>
   <div id="main">
