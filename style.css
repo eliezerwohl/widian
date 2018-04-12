@@ -366,7 +366,7 @@ textarea:focus {
 
 .section-logo {
 	text-align: center;
-	margin:105px 0px;
+	margin:125px 0px;
 }
 .section-logo a {
 	display: inline-table;
@@ -394,17 +394,18 @@ textarea:focus {
 }
 @media(min-width:767px){
 	.section-logo h1 {
-		font-size: 4em;
+		font-size: 4.5em;
+	}
+}
+@media(max-width:767px){
+	.section-logo h1 {
+		font-size: 40px;
 	}
 }
 .section-logo h4 {
 margin-bottom:0px;
 }
-/* @media(min-width:767px){
-	.section-logo h1 {
-		font-size: 40px;
-	}
-} */
+
 
 .ie-fix,
 .section-logo a:focus
@@ -885,7 +886,17 @@ margin-bottom:0px;
 	}
 }
 
+@media (min-width: 1200px){
+	.page-template-services .section-menu .container {
+	    width: 700px;
+	}
+}
 
+@media (min-width: 992px){
+	.page-template-services .section-menu .container  {
+	    width: 700px ;
+	}
+}
 .page-template-services .section-menu {
 	text-align: center;
 	background-image: url(img/plant-2.jpg);
