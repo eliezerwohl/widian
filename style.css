@@ -21,6 +21,9 @@ a {
 a:hover {
 	color: black;
 }
+.btn-link:focus, .btn-link:hover  {
+	text-decoration: none !important;
+}
 #main p a {
 	 font-style: italic !important;
 }
@@ -224,6 +227,9 @@ textarea:focus {
 	width: 35px;
 	width: 6ch;
 	background-color: #6faa9f;
+}
+.thank-you {
+	display: none;
 }
 @media(max-width:767px){
 	.line {
@@ -586,7 +592,7 @@ margin-bottom:0px;
 	box-shadow: 15px -20px #b3d1d6;
 	display: block;
 	margin:auto;
-	height:371px;
+	/* height:371px; */
 	width:auto;
 }
 
@@ -612,6 +618,15 @@ margin-bottom:0px;
 	/* .page-template-home .about {
 		padding-top:75px !important;
 	} */
+}
+@media(max-width:992px){
+	.page-template-home .clinicians .col-md-4 h4 {
+		margin-bottom:75px;
+	}
+	.page-template-home .clinicians .col-md-4 h2 {
+		margin-bottom:  50px !important;
+	}
+
 }
 
 .page-template-home .approach h2 {
@@ -675,14 +690,19 @@ margin-bottom:0px;
 }
 
 @media(max-width:767px){
-	.page-template-home .clinicians .col-md-6:last-child h4 {
+	.page-template-home .clinicians .col-sm-6:last-child h4,
+	.page-template-home .clinicians .col-sm-12:last-child h4  {
 		margin-bottom: 0px;
 	}
 	.page-template-home .approach .inner {
 		margin:0;
 	}
 }
-
+@media(max-width:992px){
+	.page-template-home .clinicians .col-md-4:last-child h4   {
+		margin-bottom: 0px;
+	}
+}
 
 
 @media(min-width: 767px) {
