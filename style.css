@@ -21,6 +21,9 @@ a {
 a:hover {
 	color: black;
 }
+.btn-link:focus, .btn-link:hover  {
+	text-decoration: none !important;
+}
 #main p a {
 	 font-style: italic !important;
 }
@@ -47,17 +50,29 @@ img {
 	margin:auto;
 	display: block;
 	border-radius:0;
-	padding:5px 25px;
+	padding:5px 12px;
+	font-size: 12px;
+	color:white;
 }
 .btn-darkblue {
 	background-color:#35434a;
-	color:white;
+}
+.btn-lightblue {
+	background-color:#308aa1;
+}
+.btn-lightblue:hover,
+.btn-lightblue:active,
+.btn-lightblue:visited {
+ opacity:0.7;
+ background-color:#308aa1;
+ color:white;
 }
 .btn-darkblue:hover,
 .btn-darkblue:active,
 .btn-darkblue:visited {
-	color:#35434a;
-	background-color:white;
+	opacity:0.7;
+	color:white;
+	background-color:#35434a;
 }
 .ajax-loader {
 	display: none !important;
@@ -213,6 +228,9 @@ textarea:focus {
 	width: 6ch;
 	background-color: #6faa9f;
 }
+.thank-you {
+	display: none;
+}
 @media(max-width:767px){
 	.line {
 		display: none;
@@ -366,7 +384,7 @@ textarea:focus {
 
 .section-logo {
 	text-align: center;
-	margin:125px 0px;
+	margin:125px 0px 145px;
 }
 .section-logo a {
 	display: inline-table;
@@ -487,7 +505,7 @@ margin-bottom:0px;
 		font-size: 28px;
 	}
 }
-@media(max-width:767px){
+/* @media(max-width:767px){
 	.page-template-home .about h2 {
 		padding:50px 0px;
 		background-image: url(img/plant.jpg);
@@ -499,18 +517,28 @@ margin-bottom:0px;
 		background-position: bottom;
 		margin-bottom:50px !important;
 	}
+} */
+@media(min-width:767px){
+	.page-template-home .about {
+		padding-top: 85px;
+		padding-bottom: 85px;
+	}
 }
-
-.page-template-home .about {
-	padding-top: 0px;
-}
-.page-template-home .about p {
+/* .page-template-home .about p {
 	margin-bottom: 0px;
-}
-.page-template-home .services {
+} */
+.page-template-home .about {
 	background-image: url(img/bench.jpg);
-	height:400px;
+	/* height:400px; */
 	width: 100%;
+}
+@media(max-width:767px){
+	.page-template-home .about {
+			background-image: url(img/wood.jpg);
+	}
+}
+.page-template-home .about a {
+	display: inline-block;
 }
 .page-template-home .approach {
 	background-image: url(img/breather.jpg) !important ;
@@ -527,26 +555,44 @@ margin-bottom:0px;
 	background-color:rgba(255,255,255, 0.7);
 }
 
-.page-template-home .services .inner .text {
-	padding: 25px 50px;
+.page-template-home .about .inner .text {
+	padding: 25px 20px;
 	text-align: center;
 	position: relative;
 }
-.page-template-home .services .inner .text  h2 {
+/* .page-template-home .about .inner .text  h2 {
 	position:absolute;
 	top:0;right:0;left:0;
 	margin-top:-50px;
+} */
+.page-template-home .services {
+	border-top: 10px solid #6faa9f;
 }
 
 .page-template-home .services .inner .text p {
 	font-size: 20px;
 }
+.page-template-home .services .inner img {
+	opacity: 0.5;
+	height: 15px;
+	width: 120px
+}
 
+.page-template-home .services p {
+	padding:0px;
+	font-size:20px;
+}
+@media(min-width:767px){
+	.page-template-home .clinicians {
+		padding-top: 75px;
+		padding-bottom:75px
+	}
+}
 .page-template-home .clinicians img {
 	box-shadow: 15px -20px #b3d1d6;
 	display: block;
 	margin:auto;
-	height:371px;
+	/* height:371px; */
 	width:auto;
 }
 
@@ -569,10 +615,19 @@ margin-bottom:0px;
 	.page-template-home .background-img {
 		height: auto;
 	}
-	.page-template-home .services {
+	/* .page-template-home .about {
 		padding-top:75px !important;
+	} */
+}
+@media(max-width:992px){
+	.page-template-home .clinicians .col-md-4 h4 {
+		margin-bottom:75px;
 	}
-})
+	.page-template-home .clinicians .col-md-4 h2 {
+		margin-bottom:  50px !important;
+	}
+
+}
 
 .page-template-home .approach h2 {
 	margin-top:10px;
@@ -635,14 +690,19 @@ margin-bottom:0px;
 }
 
 @media(max-width:767px){
-	.page-template-home .clinicians .col-md-6:last-child h4 {
+	.page-template-home .clinicians .col-sm-6:last-child h4,
+	.page-template-home .clinicians .col-sm-12:last-child h4  {
 		margin-bottom: 0px;
 	}
 	.page-template-home .approach .inner {
 		margin:0;
 	}
 }
-
+@media(max-width:992px){
+	.page-template-home .clinicians .col-md-4:last-child h4   {
+		margin-bottom: 0px;
+	}
+}
 
 
 @media(min-width: 767px) {
@@ -751,6 +811,12 @@ margin-bottom:0px;
 	padding-top:60px;
 	padding-bottom: 60px;
 }
+@media(max-width:767px){
+	.page-template-making-the-transition .section-menu {
+		background-position: bottom;
+		background-image: url(img/pad-mobile.jpg);
+	}
+}
 
 @media(max-width:767px){
 	.page-template-making-the-transition .section-menu {
@@ -829,6 +895,12 @@ margin-bottom:0px;
 	background-attachment: fixed;
 	background-position: center;
 }
+@media(max-width:767px){
+	.page-template-clinicians .other-work {
+			background-image: url(img/plant.jpg);
+			background-attachment: inherit;
+	}
+}
 .page-template-clinicians .other-work h2 {
 	margin-bottom:0px!important;
 }
@@ -901,7 +973,11 @@ margin-bottom:0px;
 	text-align: center;
 	background-image: url(img/plant-2.jpg);
 }
-
+@media(max-width:767px){
+	.page-template-services .section-menu {
+		background-image: url(img/plant-2-mobile.jpg);
+	}
+}
 .page-template-services .section-menu a {
 	color:#b3d1d6;
 }
