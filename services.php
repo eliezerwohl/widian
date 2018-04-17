@@ -2,14 +2,14 @@
 <?php get_header(); ?>
 <div class="section section-menu service-section background-img scroll">
   <div class="container">
-    <div class="holder"><h2><a href="#individual">Individual<br>Therapy</a></h2></div>
-    <div class="holder"><h2><a href="#couples">Couples<br>Therapy</a></h2></div>
-    <div class="holder"><h2><a href="#making">Making The<br>Transition<br>Group</a></h2></div>
+    <div class="holder"><h2><a href="#individual"><?php the_field("individual_therapy_menu"); ?></a></h2></div>
+    <div class="holder"><h2><a href="#couples"><?php the_field("couples_therapy_menu"); ?></a></h2></div>
+    <div class="holder"><h2><a href="#making"><?php the_field("making_the_transition_group_menu"); ?></a></h2></div>
   </div>
 </div>
 <div class="section services">
   <div class="container">
-    <h1>Services</h1>
+    <h1><?php the_field("services_headline"); ?></h1>
     <?php the_field("main"); ?>
   </div>
 </div>
@@ -22,19 +22,19 @@
 </div>
 <div class="section rates">
   <div class="container">
-    <h2>Rates</h2>
+    <h2><?php the_field("rates_headline"); ?></h2>
     <?php the_field("rates"); ?>
   </div>
 </div>
 <div class="section insurance">
   <div class="container">
-    <h2>Insurance</h2>
+    <h2><?php the_field("insurance_headline"); ?></h2>
     <?php the_field("insurance"); ?>
   </div>
 </div>
 <div class="section cancellation">
   <div class="container">
-    <h2>Cancellation Policy</h2>
+    <h2><?php the_field("cancellation_headline"); ?></h2>
     <?php the_field("cancellation"); ?>
   </div>
 </div>
