@@ -4,7 +4,7 @@
   <div class="container">
     <div class='inner'>
       <div class="text">
-        <h1>FAQS & FORMS</h1>
+        <h1><?php the_field("page_headline"); ?></h1>
       </div>
     </div>
   </div>
@@ -14,7 +14,7 @@
   <div class="container">
     <div class='row'>
       <div class="col-md-12">
-        <h2>FAQS</h2>
+        <h2><?php the_field("faqs_headline"); ?></h2>
         <?php while ( have_rows( 'content') ) : the_row(); ?>
         <div class="faq-container">
           <div class="showHide">
@@ -40,8 +40,8 @@
   <div class="container">
     <div class='row'>
       <div class="col-md-12">
-        <h2>Forms</h2>
-        <p>Please print and complete the intake forms below prior to your first session.</p>
+        <h2><?php the_field("forms_headline"); ?></h2>
+        <?php the_field("forms_text"); ?>
         <?php while ( have_rows( 'forms') ) { the_row();  ?>
           <a download href="<?php the_sub_field("file"); ?>"><span class="bold"><?php the_sub_field("text"); ?></span></a>
         <?php }; ?>
