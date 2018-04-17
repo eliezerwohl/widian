@@ -2,8 +2,8 @@
 <?php get_header(); ?>
 <div class="section emg">
   <div class="container">
-    <h1>Emergency Contacts</h1>
-    <p class="emergency">If you or a loved one is having a psychiatric emergency, CALL 9-1-1 or report to your nearest emergency room.</p>
+    <h1><?php the_field("emergency_headline"); ?></h1>
+    <span class="emergency"><?php the_field("emergency_text"); ?></span>
   </div>
 </div>
 <?php if( have_rows( 'content') ){ ?>
