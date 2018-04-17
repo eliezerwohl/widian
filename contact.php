@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2>Contact</h2>
+        <h2><?php the_field("contact_headline"); ?></h2>
         <div class="input-holder">
           <input type="text" placeholder="first name">
         </div>
@@ -19,11 +19,14 @@
         </div>
         <div class="input-holder">
           <textarea rows="10" placeholder="message"></textarea>
-          <button class="btn btn-darkblue">Submit</div>
-          <p class="italic">I am committed to your privacy. Do not include confidential or private information regarding your health condition in this form or any other form found on this website. This form is for general questions or messages. By clicking "send," you agree that the phone number you provide may be used to contact you (including autodialed or pre-recorded calls). Consent is not a condition of purchase.</p>
-        </div>
+          <div class="thank-you">
+            <p class="text-center"><?php the_field("contact_thank_you_text"); ?></div>
+          </div>
+          <button class="btn btn-darkblue"><?php the_field("submit_button_text"); ?></button>
+          <?php the_field("contact_main_text"); ?>
       </div>
     </div>
+  </div>
   </div>
   <div class="section">
     <div class="container">

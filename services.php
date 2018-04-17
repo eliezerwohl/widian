@@ -1,6 +1,6 @@
 <?php /* Template Name: Psychotherapy */ ?>
 <?php get_header(); ?>
-<div class="section section-menu  service-section background-img scroll">
+<div class="section section-menu service-section background-img scroll">
   <div class="container">
     <div class="holder"><h2><a href="#individual">Individual<br>Therapy</a></h2></div>
     <div class="holder"><h2><a href="#couples">Couples<br>Therapy</a></h2></div>
