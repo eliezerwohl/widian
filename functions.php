@@ -39,27 +39,18 @@ add_action('wp_ajax_nopriv_mail_before_submit', 'mycustomtheme_send_mail_before_
 function mycustomtheme_send_mail_before_submit(){
     check_ajax_referer('my_email_ajax_nonce');
     if ( isset($_POST['action']) && $_POST['action'] == "mail_before_submit" ){
-			$captcha=$_POST['g-recaptcha-response'];
-			$response=json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdRoksUAAAAAFoqSF1OlwFlMinBWleVqJMeVdJt&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
-			  if($response['success'] == false)
-			  {
-			    echo 'error';
-					die();
-			  }
-			  else
-			  {
-			    echo "good";
-			    $name = htmlspecialchars($_POST['name']);
-			    $telephone = htmlspecialchars($_POST['telephone']);
-			    $date = htmlspecialchars($_POST['date']);
-			    $time = htmlspecialchars($_POST['time']);
+			    $first = strip_tags($_POST['first']);
+					$last = strip_tags($_POST['last']);
+			    $phone = strip_tags($_POST['phone']);
+					$location = strip_tags($_POST['location']);
 			    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-			    $message = htmlspecialchars($_POST['message']);
-			    $formcontent="From: $name\nEmail: $email\nTelephone: $telephone\nRequested Date: $date\nRequested Time: $time\nMessage: $message";
-			    $subject = "Contact Page";
-			    // wp_mail(get_bloginfo('admin_email'), $subject, $formcontent);
+			    $message = strip_tags($_POST['message']);
+			    $formcontent="First Name: $first\n Last Name: $last\nEmail: $email\nPhone: $phone\nMessage: $message\nMessage Location: $location";
+			    $subject = "Contact Form";
+					wp_mail( the_field('email','option'), $subject, $formcontent);
+			    // wp_mail("eliezerwohl@gmail.com", $subject, $formcontent);
+					echo "good";
 					die();
-			  }
     }
     echo 'error';
     die();
@@ -68,8 +59,5 @@ require_once('wp-bootstrap-navwalker.php');
 	register_nav_menus( array(
 	  'primary' => __( 'Primary Menu', 'Widian' ),
 	) );
-
-
-// add_filter('tiny_mce_before_init', 'wpa_45815');
 
 ?>

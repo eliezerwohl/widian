@@ -6,27 +6,33 @@
       <div class="col-md-12">
         <h2><?php the_field("contact_headline"); ?></h2>
         <div class="input-holder">
-          <input type="text" placeholder="first name">
+          <input type="text" name="first" placeholder="first name">
         </div>
         <div class="input-holder">
-          <input type="text" placeholder="last name">
+          <input type="text" name="last" placeholder="last name">
         </div>
         <div class="input-holder">
-          <input type="text" placeholder="phone">
+          <input type="text" name="phone" placeholder="phone">
         </div>
         <div class="input-holder">
-          <input type="text" placeholder="email">
+          <input type="text" name="email" placeholder="email">
         </div>
         <div class="input-holder">
-          <textarea rows="10" placeholder="message"></textarea>
-          <div class="thank-you">
-            <p class="text-center"><?php the_field("contact_thank_you_text"); ?></div>
+          <textarea rows="10" name="message" placeholder="message"></textarea>
+          <span id="my_email_ajax_nonce" data-nonce="<?php echo wp_create_nonce( 'my_email_ajax_nonce' ); ?>"></span>
+          <div class="error">
+            <p class="text-center"><?php the_field("fill_out_all_fields"); ?></p>
           </div>
-          <button class="btn btn-darkblue"><?php the_field("submit_button_text"); ?></button>
+          <div class="thank-you">
+            <p class="text-center"><?php the_field("contact_thank_you_text"); ?></p>
+          </div>
+          <input type="hidden" name="location" value="Contact Page">
+          <button id="theSubmit" class="btn btn-darkblue"><?php the_field("submit_button_text"); ?></button>
           <?php the_field("contact_main_text"); ?>
+        </div>
       </div>
     </div>
-  </div>
+    </div>
   </div>
   <div class="section">
     <div class="container">
