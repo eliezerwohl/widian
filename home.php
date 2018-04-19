@@ -6,8 +6,8 @@
       <div class="text">
         <h2><?php the_field("about_us_headline"); ?></h2>
         <?php the_field("about_us"); ?>
-        <a class="btn-link" href="<?php the_field('about_us_button_link'); ?>">
-          <button class="btn btn-lightblue"><?php the_field("about_us_button_text"); ?></button>
+        <a class="btn-link btn btn-lightblue" href="<?php the_field('about_us_button_link'); ?>">
+          <?php the_field("about_us_button_text"); ?>
         </a>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <a href="<?php echo home_url(); ?>/psychotherapy#making"><p><?php the_field("making_the_transition_group_text"); ?></p></a>
       </div>
       <div class="img-holder">
-        <img src="<?php bloginfo('template_url'); ?>/img/noun-below.png">
+        <img src="<?php bloginfo('template_url'); ?>/img/noun-below.png" alt="project noun image">
       </div>
     </div>
   </div>
@@ -125,5 +125,6 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php get_footer(); ?>

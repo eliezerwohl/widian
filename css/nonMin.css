@@ -734,6 +734,16 @@ margin-bottom:0px;
 	background-image: url(img/helena-hertz.jpg);
 }
 
+.page-template-videos h1 {
+	margin-top:20px;
+}
+
+@media(max-width:767px){
+	.page-template-videos .background-img {
+		background-image: url(img/helena-hertz-mobile.jpg);
+	}
+}
+
 .page-template-videos .wellness {
 	padding-bottom: 25px !important;
 }

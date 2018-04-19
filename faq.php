@@ -24,9 +24,7 @@
             </p>
           </div>
           <div class="answer">
-            <p>
-              <?php the_sub_field( 'answer'); ?>
-           </p>
+            <?php the_sub_field( 'answer'); ?>
          </div>
        </div>
        <?php endwhile;  ?>

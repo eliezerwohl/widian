@@ -36,18 +36,21 @@
   </div>
 </div>
 <?php  } ?>
-<?php if( get_field("facebook_link") || get_field("email_link") || get_field("linkedin_link")  ){ ?>
+<?php if( get_field("facebook_link") || get_field("email_link") || get_field("linkedin_link") || get_field("youtube_link") ){ ?>
 <div class="section social">
   <div class="container">
     <div class="img-holder">
       <?php if( get_field("facebook_link")  ){ ?>
-        <a target="_blank" href="<?php the_field('facebook_link') ; ?>"><img src="<?php bloginfo('template_url'); ?>/img/fb.png"></a>
+        <a target="_blank" href="<?php the_field('facebook_link') ; ?>"><img  alt="facebook icon" src="<?php bloginfo('template_url'); ?>/img/fb.png"></a>
       <?php } ?>
       <?php if( get_field("linkedin_link")  ){ ?>
-        <a target="_blank" href="<?php the_field('linkedin_link') ; ?>"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png"></a>
+        <a target="_blank" href="<?php the_field('linkedin_link') ; ?>"><img  alt="linkedin icon" src="<?php bloginfo('template_url'); ?>/img/linkedin.png"></a>
       <?php } ?>
       <?php if( get_field("email_link")  ){ ?>
-        <a target="_blank" href="mailto:<?php the_field('email_link') ; ?>"><img src="<?php bloginfo('template_url'); ?>/img/email.png"></a>
+        <a target="_blank" href="mailto:<?php the_field('email_link') ; ?>"><img  alt="email icon" src="<?php bloginfo('template_url'); ?>/img/email.png"></a>
+      <?php } ?>
+      <?php if( get_field("youtube_link")  ){ ?>
+        <a target="_blank" href="<?php the_field('youtube_link') ; ?>"><img  alt="youtube icon" src="<?php bloginfo('template_url'); ?>/img/youtube.png"></a>
       <?php } ?>
     </div>
   </div>

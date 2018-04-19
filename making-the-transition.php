@@ -12,7 +12,6 @@
         <span class="service-section"><a href="#location"><?php the_field("location_menu"); ?></a>
         <span class="divider">|</span></span>
         <span class="service-section"><a href="#bring"><?php the_field("what_to_bring_menu"); ?></a>
-        </span>
         <span class="divider">|</span></span>
         <span class="service-section"><a href="#cancellations"><?php the_field("cancellations_menu"); ?></a>
         </span>
@@ -90,5 +89,6 @@
   <div class="container">
     <h2><?php the_field("questions_headline"); ?></h2>
     <?php the_field("questions_text"); ?>
+  </div>
 </div>
 <?php get_footer(); ?>
