@@ -9,14 +9,22 @@
     <title>
       <?php bloginfo('name'); ?>
     </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     <link
     rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
-    <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
     <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117906079-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117906079-1');
+    </script>
   </head>
   <body <?php body_class(); ?>>
     <nav id="navbar" class="navbar navbar-default">
@@ -32,7 +40,7 @@
           <a  class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">
             <div class="section-logo mobile">
               <div class="parent">
-                <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Counseling Services</span></h1>
+                <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Logo">Nicola Counseling Services</span></h1>
                 <h4>LLC</h4>
                 <div class="line-container"><span class="logo-line"></span></div>
               </div>
@@ -59,7 +67,7 @@
     </nav>
     <div class="section-logo visible-sm visible-lg visible-md">
       <a href="<?php echo home_url(); ?>">
-        <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png">Nicola Counseling Services</span></h1>
+        <h1><span class="iefix"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Logo">Nicola Counseling Services</span></h1>
         <h4>LLC</h4>
           <div class="line-container"><span class="logo-line"></span></div>
       </a>
