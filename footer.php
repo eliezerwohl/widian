@@ -14,12 +14,12 @@
 		<a class="contact-me" target="_blank" href="tel:<?php echo str_replace(' ', '', get_field('phone', 'option')); ?>"><i class="fa fa-phone" aria-hidden="true"></i> <span itemprop="telephone"><?php the_field("phone", "option"); ?></span></a>
 	</div></span>
 	<div>
-		<div class="bottom-contact">&copy; <?php echo date("Y"); ?> Nicola Counseling Services, LLC</div><div class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design, LLC</a></div>
+		<div class="bottom-contact">&copy; <?php echo date("Y"); ?> Nicola Counseling Services, LLC</div><div class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design, LLC</a></div><div class="bottom-contact"><a href="<?php the_field('privacy_policy_pdf', 'option')?>">Privacy Policy</a></div>
 	</div>
 	<?php wp_footer(); ?>
 	</footer>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.min.js?v=<?php $theme = wp_get_theme( ); echo $theme->version; ?>"></script>
 	<!-- <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/faq.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/making.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/contact.js"></script> -->

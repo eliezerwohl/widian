@@ -18,9 +18,9 @@
     <div class='inner'>
       <div class="text">
         <h2><?php the_field("services_headline"); ?></h2>
-        <a href="<?php echo home_url(); ?>/psychotherapy#individual"><p><?php the_field("individual_therapy_text"); ?></p></a>
-        <a href="<?php echo home_url(); ?>/psychotherapy#couples"><p><?php the_field("couples_therapy_text"); ?></p></a>
-        <a href="<?php echo home_url(); ?>/psychotherapy#making"><p><?php the_field("making_the_transition_group_text"); ?></p></a>
+        <a href="<?php echo home_url(); ?>/counseling#individual"><p><?php the_field("individual_therapy_text"); ?></p></a>
+        <a href="<?php echo home_url(); ?>/counseling#couples"><p><?php the_field("couples_therapy_text"); ?></p></a>
+        <a href="<?php echo home_url(); ?>/counseling#making"><p><?php the_field("making_the_transition_group_text"); ?></p></a>
       </div>
       <div class="img-holder">
         <img src="<?php bloginfo('template_url'); ?>/img/noun-below.png" alt="project noun image">
@@ -88,9 +88,28 @@
        </a>
      </div>
    <?php } ?>
-
-
+  </div>
+    <?php if( have_rows('additional_clinicians') ) { ?>
+      <div class='row text-center showHide-home'>
+        <span class="italic ">show all</span>
+      </div>
+      <?php $counter = 0; $totalCounter = 0; while ( have_rows( 'additional_clinicians') ) { the_row();
+      $rowCount = count(get_field("additional_clinicians"));
+      $image=get_sub_field( 'img'); $totalCounter++; $counter++; ?>
+      <?php if ($counter == 1) { ?>
+        <div class="row more-clinicians">
+      <?php } ?>
+      <div class="col-md-4">
+        <a href="<?php the_field('link'); ?>">
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
+          <h4><?php the_sub_field("text"); ?></h4>
+        </a>
+      </div>
+      <?php if ( ($counter == 3) || ($rowCount == $totalCounter ) ) { ?>
     </div>
+  <?php $counter = 0; } ?>
+  <?php }    ?>
+  <?php }    ?>
   </div>
 </div>
 <div class="section contact-form background-img scroll">
@@ -112,6 +131,11 @@
         </div>
         <div class="input-holder">
           <textarea rows="10" name="message" placeholder="message"></textarea>
+           <div id="agree-holder">
+              <input id="agree" type="checkbox" name="agree" placeholder="email"><?php the_field("consent_text"); ?>
+            </div>
+        </div>
+        <div class="input-holder">
           <span id="my_email_ajax_nonce" data-nonce="<?php echo wp_create_nonce( 'my_email_ajax_nonce' ); ?>"></span>
           <div class="error">
             <p class="text-center"><?php the_field("fill_out_all_fields"); ?></p>
