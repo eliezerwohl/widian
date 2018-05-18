@@ -19,6 +19,11 @@
         </div>
         <div class="input-holder">
           <textarea rows="10" name="message" placeholder="message"></textarea>
+          <div id="agree-holder">
+              <input id="agree" type="checkbox" name="agree" placeholder="email"><?php the_field("consent_text"); ?>
+            </div>
+        </div>
+        <div class="input-holder">
           <span id="my_email_ajax_nonce" data-nonce="<?php echo wp_create_nonce( 'my_email_ajax_nonce' ); ?>"></span>
           <div class="error">
             <p class="text-center"><?php the_field("fill_out_all_fields"); ?></p>

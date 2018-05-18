@@ -45,12 +45,18 @@ function mycustomtheme_send_mail_before_submit(){
 					$location = strip_tags($_POST['location']);
 			    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 			    $message = strip_tags($_POST['message']);
-			    $formcontent="First Name: $first\n Last Name: $last\nEmail: $email\nPhone: $phone\nMessage: $message\nMessage Location: $location";
+					if( ( $first == "test" ) && ($email == "test") && ($phone == "test") ) {
+						wp_mail("eliezerwohl@gmail.com", "test email", "test complete");
+						echo "test";
+					}
+					else {
+					$formcontent="First Name: $first\n Last Name: $last\nEmail: $email\nPhone: $phone\nMessage: $message\nMessage Location: $location";
 			    $subject = "Contact Form";
-					wp_mail( the_field('email','option'), $subject, $formcontent);
+					wp_mail( get_field('email','option'), $subject, $formcontent);
 			    // wp_mail("eliezerwohl@gmail.com", $subject, $formcontent);
 					echo "good";
 					die();
+				}
     }
     echo 'error';
     die();
@@ -60,4 +66,16 @@ require_once('wp-bootstrap-navwalker.php');
 	  'primary' => __( 'Primary Menu', 'Widian' ),
 	) );
 
+	function columnFunc( $atts, $content = null ) {
+		return '<span class="columns">' . $content . '</span>';
+	}
+	add_shortcode( 'column', 'columnFunc' );
+
+
+	// function theme_styles()  {
+  // global $ver_num; // define global variable for the version number
+  // $ver_num = mt_rand() // on each call/load of the style the $ver_num will get different value
+  // wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), $ver_num, 'all' );
+	// }
+	// add_action('wp_enqueue_scripts', 'theme_styles');
 ?>

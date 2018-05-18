@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     <link
     rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
+
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css?v=<?php $theme = wp_get_theme( ); echo $theme->version; ?>">
+    <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/nonMin.css?v=<?php $theme = wp_get_theme( ); echo $theme->version; ?>"> -->
     <?php wp_head(); ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117906079-1"></script>
